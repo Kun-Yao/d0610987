@@ -5,7 +5,6 @@ public class triangle {
 	
 	public String check(double a, double b, double c) throws Exception {
 		
-		//找出最長邊
 	    double[] l = {a, b, c};
 	    Arrays.sort(l);
 	    
