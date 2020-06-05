@@ -5,24 +5,24 @@ public class triangle {
 	
 	public String check(double a, double b, double c) throws Exception {
 		
-		//§ä¥X³ÌªøÃä
+		//æ‰¾å‡ºæœ€é•·é‚Š
 	    double[] l = {a, b, c};
 	    Arrays.sort(l);
 	    
 		if (l[0] + l[1] <= l[2]) {
-			throw new Exception("¤£¬O¤T¨¤§Î");
+			throw new Exception("ä¸æ˜¯ä¸‰è§’å½¢");
 		}
 		
 		String result  = new String();
 		
 		if (l[0] == l[1] && l[1] == l[2]) {
-			result = "¥¿¤T¨¤§Î";
+			result = "æ­£ä¸‰è§’å½¢";
 		}else if(l[0] == l[1] || l[1] == l[2]) { 
-			result = "µ¥¸y¤T¨¤§Î";
+			result = "ç­‰è…°ä¸‰è§’å½¢";
 		}else if (Math.abs(l[0]*l[0] + l[1]*l[1] - l[2]*l[2]) < 0.001) {
-			result = "ª½¨¤¤T¨¤§Î";
+			result = "ç›´è§’ä¸‰è§’å½¢";
 		}else {
-			result = "¤T¨¤§Î";
+			result = "ä¸‰è§’å½¢";
 		}
 		System.out.println(result);
 		return result;

@@ -8,30 +8,30 @@ public class KindOfTriangle {
 	
 	@Test
 	public void test1() throws Exception {
-		assertEquals("¥¿¤T¨¤§Î", T.check(1, 1, 1));
+		assertEquals("æ­£ä¸‰è§’å½¢", T.check(1, 1, 1));
 	}
 	
 	@Test
 	public void test2() throws Exception {
-		assertEquals("µ¥¸y¤T¨¤§Î", T.check(2, 3, 2));
-		assertEquals("µ¥¸y¤T¨¤§Î", T.check(2, 2, 3));
-		assertEquals("µ¥¸y¤T¨¤§Î", T.check(3, 2, 2));
-		assertEquals("µ¥¸y¤T¨¤§Î", T.check(3, 3, 2));
+		assertEquals("ç­‰è…°ä¸‰è§’å½¢", T.check(2, 3, 2));
+		assertEquals("ç­‰è…°ä¸‰è§’å½¢", T.check(2, 2, 3));
+		assertEquals("ç­‰è…°ä¸‰è§’å½¢", T.check(3, 2, 2));
+		assertEquals("ç­‰è…°ä¸‰è§’å½¢", T.check(3, 3, 2));
 	}
 	
 	@Test
 	public void test3() throws Exception {
-		assertEquals("ª½¨¤¤T¨¤§Î", T.check(2, 1, 1.732));
+		assertEquals("ç›´è§’ä¸‰è§’å½¢", T.check(2, 1, 1.732));
 	}
 	
 	@Test
 	public void test4() throws Exception {
-		assertEquals("¤T¨¤§Î", T.check(3, 4, 2));
+		assertEquals("ä¸‰è§’å½¢", T.check(3, 4, 2));
 	}
 	
 	@Test
 	public void test5() throws Exception {
-		assertEquals("ª½¨¤¤T¨¤§Î", T.check(4, 3, 5));
+		assertEquals("ç›´è§’ä¸‰è§’å½¢", T.check(4, 3, 5));
 	}
 	
 	@Test(expected = Exception.class)
